@@ -1,0 +1,13 @@
+[Unit]
+Description=Edge Detection
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/Desktop/project/2.edge_detection/edge.o
+StandardOutput=journal+console
+StandardError=journal+console
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

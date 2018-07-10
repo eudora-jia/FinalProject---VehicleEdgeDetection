@@ -1,0 +1,13 @@
+[Unit]
+Description=Vehicle Detection
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/Desktop/project/1.vehicle_detection/vehicle.o
+StandardOutput=journal+console
+StandardError=journal+console
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
